@@ -1,0 +1,28 @@
+{
+    "name": "Javelin/Domain",
+    "description": "A library defining interfaces for Domain Driven Design",
+    "version": "1.0.0",
+    "type": "library",
+    "keywords": ["DDD", "Domain Driven Design"],
+    "authors": [
+    	{
+    		"name": "Patrick Luy",
+    		"email": "patrickaluy@gmail.com",
+    		"role": "developer"
+    	}
+    ],
+
+    "require": {
+        
+    },
+
+    "autoload": {
+        "psr-4": {
+             "Javelin\\": "src/",
+             "Javelin\\Domain\\": "src/Domain/",
+             "Javelin\\Pattern\\": "src/Pattern/",
+             "Javelin\\Interface\\": "src/Interface/",
+             "Javelin\\Applicatioin\\": "src/Application/"
+        }
+    }
+}
