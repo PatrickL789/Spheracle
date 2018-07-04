@@ -3,6 +3,7 @@
 namespace Domain;
 
 use Domain\Events\EventInterface;
+use Domain\Events\EventDispatcherInterface;
 
 /**--------------------------------------------------------------------------
 |
@@ -19,7 +20,7 @@ use Domain\Events\EventInterface;
 -----------------------------------------------------------------------------
 */
 
-class Entity implements EntityInterface
+class Entity implements EntityInterface, EventDispatcherInterface
 {
 
 	/**
@@ -28,9 +29,22 @@ class Entity implements EntityInterface
 
 	private $events; 
 
+
+	/**
+	* @var array
+	*/
+
+	private $listeners;
+
+
+	/**
+	* Constructor
+	*/
+
 	public function __construct()
 	{
 		$this->events = array(); 
+		$this->listeners = array();
 	}
 
 
@@ -96,6 +110,20 @@ class Entity implements EntityInterface
 	{
 		return $this->events; 
 	}
+
+
+	/**
+	* dispatchEvents() dispatches all events in the event queue. 
+	* @returns void
+	*/
+
+	protected function dispatchEvents()
+	{
+		//
+	}
+
+
+
 }
 
 ?>

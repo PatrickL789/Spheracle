@@ -41,16 +41,6 @@ interface EntityInterface
 	public function equals($target): bool; 
 
 
-	/**
-	* raiseEvent() raises a domain event 
-	* 
-	* @param Javelin\Domain\Event
-	*
-	* @return void
-	*/
-
-	protected raiseEvent(EventInterface $e, int $priority);
-
 
 	/**
 	* getEvents() retreives all the events raised by the domain
