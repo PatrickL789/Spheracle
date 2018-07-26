@@ -2,6 +2,8 @@
 
 namespace Domain;
 
+use Domain\EntityInterface; 
+
 /**--------------------------------------------------------------------------
 |
 |	AggregateRootInterace
@@ -16,7 +18,11 @@ namespace Domain;
 
 interface AggregateInterface
 {
-	//
+	/* 
+	* root() returns the root of the aggregate
+	*/
+
+	public function root(): EntityInterface; 
 }
 
 ?>

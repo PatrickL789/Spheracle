@@ -1,6 +1,6 @@
 <?php
 
-namespace Domain;
+namespace Infrastructore;
 
 use Doain\RepositoryInterface; 
 

@@ -27,7 +27,7 @@ abstract class Command implements CommandInterface
 	* execute() 
 	*/
 
-	abstract function execute(); 
+	public abstract function execute(); 
 }
 
 ?>

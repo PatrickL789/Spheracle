@@ -18,11 +18,7 @@
 
     "autoload": {
         "psr-4": {
-             "Javelin\\": "src/",
-             "Javelin\\Domain\\": "src/Domain/",
-             "Javelin\\Pattern\\": "src/Pattern/",
-             "Javelin\\Interface\\": "src/Interface/",
-             "Javelin\\Applicatioin\\": "src/Application/"
+             "Javelin\\": "src/"
         }
     }
 }
