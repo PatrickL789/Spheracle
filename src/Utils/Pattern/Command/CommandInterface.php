@@ -1,6 +1,6 @@
 <?php
 
-namespace Pattern\Command; 
+namespace Util;
 
 /*-----------------------------------
 |Command Intrface

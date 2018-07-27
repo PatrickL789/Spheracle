@@ -18,7 +18,9 @@
 
     "autoload": {
         "psr-4": {
-             "Javelin\\": "src/"
+             "Javelin\\": "src/",
+             "Javelin\\Util\\": "src/Utils",
+             "Javelin\\Util\\Pattern\\": "src/utils/Pattern"
         }
     }
 }

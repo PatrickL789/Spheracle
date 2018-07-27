@@ -1,6 +1,6 @@
 <?php
 
-namespace Pattern\Builder; 
+namespace Util; 
 
 /*-----------------------------------
 | Builder Intrface

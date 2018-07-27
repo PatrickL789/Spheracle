@@ -1,6 +1,6 @@
 <?php
 
-namespace Pattern\FactoryMethod; 
+namespace Util; 
 
 /*-----------------------------------
 | FactoryMethodIntrface

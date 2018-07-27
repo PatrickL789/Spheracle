@@ -2,7 +2,8 @@
 
 namespace Domain;
 
-use Domain\Events\EventInterface;
+use Utils\IDInterface; 
+
 
 /**--------------------------------------------------------------------------
 |
@@ -23,14 +24,14 @@ interface EntityInterface
 {
 	/**
 	* 
-	* identifiedBy(() returns the entity's unique identifying characteristic. 
+	* id() returns the entity's unique identifying characteristic. 
 	* This characteristic must be unique to the particular instnce of the entity. 
 	*
 	* @return mixed 
 	*
 	*/
 
-	public abstract function identifiedBy(); 
+	public abstract function id(): IInterface; 
 
 	/**
 	* equals() determines if the entity is equal to $target
@@ -41,14 +42,13 @@ interface EntityInterface
 	public function equals($target): bool; 
 
 
-
 	/**
-	* getEvents() retreives all the events raised by the domain
-	*
-	* @return array 
+	* setId() sets the entity's id to id. 
+	* @param ID. 
+	* @return void
 	*/
 
-	public function getEvents(): array; 
+	public function setId(IDInterface $id);
 }
 
 ?>

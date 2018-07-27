@@ -1,8 +1,8 @@
 <?php
 
-namespace Pattern\Command; 
+namespace Util; 
 
-use Pattern\Command\CommandInterface;
+use Util\CommandInterface;
 
 /*-----------------------------------
 | Command Intrface

@@ -1,12 +1,12 @@
 <?php
 
-namespace Pattern\Specification; 
+namespace Util; 
 
-use Pattern\Specification\SpecificationInterface; 
-use Pattern\Specification\AndSpecification; 
-use Pattern\Specification\AndNotSpecification; 
-use Pattern\Specification\OrSpecification; 
-use Pattern\Specification\OrNotSpecification; 
+use Util\SpecificationInterface; 
+use Util\AndSpecification; 
+use Util\AndNotSpecification; 
+use Util\OrSpecification; 
+use Util\OrNotSpecification; 
 
 
 

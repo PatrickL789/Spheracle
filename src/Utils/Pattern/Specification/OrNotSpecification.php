@@ -1,12 +1,12 @@
 <?php
 	
-namespace Pattern\Specification
+namespace Util;
 
-use Pattern\Specification\Specification; 
+use Util\Specification; 
 
 /**--------------------------------------------------------------------------
 |
-|	OrSpecification
+|	OrNotSpecification
 |
 -----------------------------------------------------------------------------
 |
@@ -15,7 +15,7 @@ use Pattern\Specification\Specification;
 -----------------------------------------------------------------------------
 */
 
-class OrSpecification extends Specification
+class OrNotSpecification extends Specification
 {
 	
 	/**
@@ -48,7 +48,7 @@ class OrSpecification extends Specification
 
 	public function isSatisfiedBy($target): bool
 	{
-		return $this->left->isSatisfiedBy($target) || $this->right->isSatisfiedBy($target);
+		return $this->left->isSatisfiedBy($target) || !$this->right->isSatisfiedBy($target);
 	}
 }
 

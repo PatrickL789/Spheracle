@@ -6,9 +6,7 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'Javelin\\Pattern\\' => array($baseDir . '/src/Pattern'),
-    'Javelin\\Interface\\' => array($baseDir . '/src/Interface'),
-    'Javelin\\Domain\\' => array($baseDir . '/src/Domain'),
-    'Javelin\\Applicatioin\\' => array($baseDir . '/src/Application'),
+    'Javelin\\Util\\Pattern\\' => array($baseDir . '/src/utils/Pattern'),
+    'Javelin\\Util\\' => array($baseDir . '/src/Utils'),
     'Javelin\\' => array($baseDir . '/src'),
 );

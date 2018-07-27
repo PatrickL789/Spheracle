@@ -9,30 +9,20 @@ class ComposerStaticInitd0bda29edf8eb7cd6013d67fab1879ee
     public static $prefixLengthsPsr4 = array (
         'J' => 
         array (
-            'Javelin\\Pattern\\' => 16,
-            'Javelin\\Interface\\' => 18,
-            'Javelin\\Domain\\' => 15,
-            'Javelin\\Applicatioin\\' => 21,
+            'Javelin\\Util\\Pattern\\' => 21,
+            'Javelin\\Util\\' => 13,
             'Javelin\\' => 8,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
-        'Javelin\\Pattern\\' => 
+        'Javelin\\Util\\Pattern\\' => 
         array (
-            0 => __DIR__ . '/../..' . '/src/Pattern',
+            0 => __DIR__ . '/../..' . '/src/utils/Pattern',
         ),
-        'Javelin\\Interface\\' => 
+        'Javelin\\Util\\' => 
         array (
-            0 => __DIR__ . '/../..' . '/src/Interface',
-        ),
-        'Javelin\\Domain\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/src/Domain',
-        ),
-        'Javelin\\Applicatioin\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/src/Application',
+            0 => __DIR__ . '/../..' . '/src/Utils',
         ),
         'Javelin\\' => 
         array (

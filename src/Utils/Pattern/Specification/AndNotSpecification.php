@@ -1,8 +1,8 @@
 <?php
 	
-namespace Pattern\Specification
+namespace Util;
 
-use Pattern\Specification\Specification; 
+use Util\Specification; 
 
 /**--------------------------------------------------------------------------
 |

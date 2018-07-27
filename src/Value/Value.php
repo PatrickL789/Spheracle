@@ -27,6 +27,17 @@ abstract class Value implements ValueInterface
 	{
 		//
 	}
+
+	/**
+	* equals() determines if the object is equal to the target
+	* @param mixed
+	* @return bool
+	*/
+
+	public function equals($target): bool
+	{
+		return false;
+	}
 }
 
 ?>

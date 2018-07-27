@@ -1,8 +1,6 @@
 <?php
 
-namespace Domain;
-
-use Domain\EntityInterface; 
+namespace Domain; 
 
 /**--------------------------------------------------------------------------
 |
@@ -22,12 +20,12 @@ use Domain\EntityInterface;
 interface ValueInterface
 {
 	/**
-	* getRoot() returns the root of the aggregate
-	* 
-	* @return Entity
+	* equals() determines if the object is equal to the target
+	* @param mixed
+	* @return bool
 	*/
 
-	public function getRoot(): EntityInterface;
+	public function equals($target): bool;
 }
 
 ?>

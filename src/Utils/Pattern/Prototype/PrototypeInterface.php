@@ -1,6 +1,6 @@
 <?php
 
-namespace Pattern\Prototype; 
+namespace Util; 
 
 /*-----------------------------------
 | PrototypeIntrface

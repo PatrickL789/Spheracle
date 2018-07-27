@@ -2,8 +2,9 @@
 
 namespace Domain;
 
-use Domain\Events\EventInterface;
-use Domain\Events\EventDispatcherInterface;
+use Domain\EntityInterface;
+use Util\IllegalStateChangeException; 
+use Util\IllegalArgunentException;
 
 /**--------------------------------------------------------------------------
 |
@@ -20,46 +21,37 @@ use Domain\Events\EventDispatcherInterface;
 -----------------------------------------------------------------------------
 */
 
-class Entity implements EntityInterface, EventDispatcherInterface
+class Entity implements EntityInterface
 {
 
 	/**
-	* @var array
+	* @var Utils\ID
 	*/
 
-	private $events; 
-
-
-	/**
-	* @var array
-	*/
-
-	private $listeners;
-
+	private $id;
 
 	/**
 	* Constructor
 	*/
 
-	public function __construct()
+	public function __construct(IDInterface $id = null)
 	{
-		$this->events = array(); 
-		$this->listeners = array();
+		$this->id = $id;
 	}
 
 
 	/**
 	* 
-	* identifiedBy(() returns the entity's unique identifying characteristic. 
+	* id(() returns the entity's unique identifying characteristic. 
 	* This characteristic must be unique to the particular instnce of the entity. 
 	*
 	* @return mixed 
 	*
 	*/
 
-	public function identifiedBy()
+	public function id(): ID
 	{
-		return null; 
+		return $this->id;
 	}
 
 
@@ -85,44 +77,26 @@ class Entity implements EntityInterface, EventDispatcherInterface
 		return $result; 
 	}
 
-
 	/**
-	* raiseEvent() raises a domain event 
-	* 
-	* @param Javelin\Domain\Event
-	*
-	* @return void
+	* setId() sets the entity's identifier to $id
+	* @param Util\IDInterface
+	@return void
 	*/
 
-	protected raiseEvent(EventInterface $e, int $priority = 0)
-	{
-		$this->events[] = $e;
-	}
+	public function setId(IDInterface $id)
+	(
+		if ($this->id != null)
+		{
+			throw new IllegalStateChangeException("Entity is immutable");
+		}
 
+		if ($id == null)
+		{
+			throw new IllegalArgunentException("Id cannot be NULL"); 
+		}
 
-	/**
-	* getEvents() retreives all the events raised by the domain
-	*
-	* @return array 
-	*/
-
-	public function getEvents(): array
-	{
-		return $this->events; 
-	}
-
-
-	/**
-	* dispatchEvents() dispatches all events in the event queue. 
-	* @returns void
-	*/
-
-	protected function dispatchEvents()
-	{
-		//
-	}
-
-
+		$this->id = $id;
+	)
 
 }
 

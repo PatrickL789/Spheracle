@@ -1,6 +1,6 @@
 <?php
 
-namespace Pattern\AbstractFactory; 
+namespace Util; 
 
 /*-----------------------------------
 | Abstract Factory Intrface
