@@ -3,8 +3,10 @@
 namespace Domain;
 
 use Domain\EntityInterface;
-use Util\IllegalStateChangeException; 
-use Util\IllegalArgunentException;
+use Exceptions\IllegalStateChangeException; 
+use Exceptions\IllegalArgunentException;
+use Exceptions\IDInterface; 
+use Javelin\Utils\ID;
 
 /**--------------------------------------------------------------------------
 |
@@ -49,7 +51,7 @@ class Entity implements EntityInterface
 	*
 	*/
 
-	public function id(): ID
+	public function id(): IDInterface
 	{
 		return $this->id;
 	}
@@ -63,18 +65,7 @@ class Entity implements EntityInterface
 
 	public function equals($target)
 	{
-		$result = false; 
-
-		if ($target instanceof self)
-		{
-			$result = $target->identifiedBy() == $this->identifiedBy(); 
-		}
-		else
-		{
-			$result = $target == $this->identifiedBy(); 
-		}
-
-		return $result; 
+		return $this->id()->equals($target);
 	}
 
 	/**
@@ -97,7 +88,6 @@ class Entity implements EntityInterface
 
 		$this->id = $id;
 	)
-
 }
 
 ?>

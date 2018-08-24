@@ -1,6 +1,6 @@
 <?php
 
-namespace Domain;
+namespace Entity;
 
 use Utils\IDInterface; 
 

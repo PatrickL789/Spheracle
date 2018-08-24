@@ -2,7 +2,8 @@
 
 namespace Domain;
 
-use Domain\ValueInterface
+use Javelin\Value\ValueInterface
+use Javelin\Exceptions\IllegalConversionException;
 
 /**--------------------------------------------------------------------------
 |
@@ -25,7 +26,7 @@ abstract class Value implements ValueInterface
 
 	public function __construct()
 	{
-		//
+		$this->isValid();
 	}
 
 	/**
@@ -38,6 +39,44 @@ abstract class Value implements ValueInterface
 	{
 		return false;
 	}
+
+
+
+	// Static methods
+
+	/**
+	* encode converts the value into a string representation. 
+	*/
+
+	public static function encode(ValueInterface $value): string
+	{
+		return "";
+	}
+
+	/**
+	* decode() converts the string representation to an object. 
+	* @var string
+	* @return Domain\Value
+	*/
+
+	public static function decode(string $value): ValueInterface
+	{
+		throw new IllegalConversionException(); 
+	}
+
+
+	// Magic Methods
+
+	/**
+	* __toString()
+	*/
+
+	public function __toString()
+	{
+		return self::encode($this);
+	}
+
+
 }
 
 ?>

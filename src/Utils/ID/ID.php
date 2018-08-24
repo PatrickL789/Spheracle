@@ -1,8 +1,9 @@
 <?php
 
-namespace Util;
+namespace Utils;
 
-use Utils\IDInterface;
+use Utils\ID\IDInterface;
+use Utils\IllegalArgumentException;
 
 /**--------------------------------------------------------------------------
 |
@@ -29,6 +30,11 @@ class ID implements IDInterface
 
 	public function __construct($value)
 	{
+		if (!$this->isValid($value))
+		{
+			throw new IllegalArgumentException();
+		}
+
 		$this->value = $value;
 	}
 
@@ -40,7 +46,7 @@ class ID implements IDInterface
 	{
 		$status = false;
 
-		if ($target instanceof $IDInterface)
+		if ($target instanceof self)
 		{
 			$status = $target->value() == $this->value;
 		}
@@ -50,6 +56,17 @@ class ID implements IDInterface
 		}
 
 		return $status;
+	}
+
+
+	/**
+	* isValid
+	*/
+
+	protected function isValid(...$values): bool
+	{
+		$type = gettype($value[0]);
+		return ($type == "string") || ($type == 'integer');
 	}
 
 	// static functions

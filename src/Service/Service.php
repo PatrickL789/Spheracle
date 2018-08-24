@@ -2,7 +2,7 @@
 
 namespace Domain;
 
-use Domain\ServiceInterface;
+use Domain\Service\ServiceInterface;
 
 /**--------------------------------------------------------------------------
 |

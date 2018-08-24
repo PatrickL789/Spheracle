@@ -1,8 +1,8 @@
 <?php
 
-namespace Util;
+namespace Utils;
 
-use Domain\ValueInterface;
+use Domain\Value\ValueInterface;
 
 /**--------------------------------------------------------------------------
 |
