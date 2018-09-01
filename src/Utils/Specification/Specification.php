@@ -2,11 +2,11 @@
 
 namespace Utilss; 
 
-use Utils\SpecificationInterface; 
-use Utils\AndSpecification; 
-use Utils\AndNotSpecification; 
-use Utils\OrSpecification; 
-use Utils\OrNotSpecification; 
+use Javelin\Utils\SpecificationInterface; 
+use Javelin\Utils\AndSpecification; 
+use Javelin\Utils\AndNotSpecification; 
+use Javelin\Javelin\Utils\OrSpecification; 
+use Javelin\Utils\OrNotSpecification; 
 
 
 

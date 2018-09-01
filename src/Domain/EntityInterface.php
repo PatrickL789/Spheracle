@@ -1,8 +1,8 @@
 <?php
 
-namespace Entity;
+namespace Domain;
 
-use Utils\IDInterface; 
+use Javelin\Domain\IDInterface; 
 
 
 /**--------------------------------------------------------------------------

@@ -1,8 +1,8 @@
 <?php
 
-namespace Infrastructore;
+namespace Domain;
 
-use Doain\RepositoryInterface; 
+use Javelin\Doain\RepositoryInterface; 
 
 
 /**--------------------------------------------------------------------------

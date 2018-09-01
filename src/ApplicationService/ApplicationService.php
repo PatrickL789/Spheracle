@@ -2,7 +2,7 @@
 
 namespace ApplicationService;
 
-use ApplicatioinService\ApplicationServiceInterface; 
+use Javelin\ApplicationService\ApplicationServiceInterface; 
 
 /**--------------------------------------------------------------------------
 |

@@ -2,7 +2,7 @@
 	
 namespace Utils;
 
-use Utils\Specification; 
+use Javelin\Utils\Specification; 
 
 /**--------------------------------------------------------------------------
 |

@@ -2,7 +2,7 @@
 
 namespace Utils;
 
-use Domain\Value\ValueInterface;
+use Javelin\Domain\ValueInterface;
 
 /**--------------------------------------------------------------------------
 |

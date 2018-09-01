@@ -2,11 +2,11 @@
 
 namespace Domain;
 
-use Domain\EntityInterface;
-use Exceptions\IllegalStateChangeException; 
-use Exceptions\IllegalArgunentException;
-use Exceptions\IDInterface; 
-use Javelin\Utils\ID;
+use Javelin\Domain\EntityInterface;
+use Javelin\Exceptions\IllegalStateChangeException; 
+use Javelin\Exceptions\IllegalArgunentException;
+use Javelin\Exceptions\IDInterface; 
+use Javelin\Utils\ID\ID;
 
 /**--------------------------------------------------------------------------
 |

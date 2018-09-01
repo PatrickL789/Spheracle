@@ -2,8 +2,9 @@
 
 namespace Utils;
 
-use Utils\ID\IDInterface;
-use Utils\IllegalArgumentException;
+use Javelin\Utils\ID\IDInterface;
+use Javelin\Domain\Value;
+use Javelin\Exceptions\IllegalArgumentException;
 
 /**--------------------------------------------------------------------------
 |
@@ -16,7 +17,7 @@ use Utils\IllegalArgumentException;
 -----------------------------------------------------------------------------
 */
 
-class ID implements IDInterface
+class ID extends Value implements IDInterface
 {
 	/**
 	* @var mixed
@@ -116,6 +117,8 @@ class ID implements IDInterface
 			// LINUX
 			$ip = $_SERVER['SERVER_ADDR'];
 		}
+
+		return $ip;
 
 		return $ip;
 	}

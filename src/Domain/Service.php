@@ -2,7 +2,7 @@
 
 namespace Domain;
 
-use Domain\Service\ServiceInterface;
+use Javelin\Domain\ServiceInterface;
 
 /**--------------------------------------------------------------------------
 |

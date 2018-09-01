@@ -2,27 +2,24 @@
 
 namespace Domain;
 
-use Domain\EntityInterface; 
+use Javelin\Domain\FactoryInterface;
+
 
 /**--------------------------------------------------------------------------
 |
-|	AggregateRootInterace
+|	Factory
 |
 -----------------------------------------------------------------------------
 |
-|	An Aggregate is a cluster of associated objects 
+|	A Domain Factory s an object responsible for the creation of other objects
 |
 -----------------------------------------------------------------------------
 */
 
 
-interface AggregateInterface
+abstract class Factory implements FactoryInterface
 {
-	/* 
-	* root() returns the root of the aggregate
-	*/
-
-	public function root(): EntityInterface; 
+	//
 }
 
 ?>

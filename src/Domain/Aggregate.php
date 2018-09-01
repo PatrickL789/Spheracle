@@ -2,8 +2,8 @@
 
 namespace Domain; 
 
-use Domain\AggregateInterface; 
-use Domain\Entity; 
+use Javelin\Domain\AggregateInterface; 
+use Javelin\Entity\Entity; 
 
 /**--------------------------------------------------------------------------
 |

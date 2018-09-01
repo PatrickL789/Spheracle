@@ -1,9 +1,10 @@
 <?php
-
 namespace Domain;
 
-use Javelin\Value\ValueInterface
-use Javelin\Exceptions\IllegalConversionException;
+
+
+use Javeliin\Domain\ValueInterface;
+use Javelin\Exception\IllegalStateChangeException;
 
 /**--------------------------------------------------------------------------
 |
@@ -19,8 +20,7 @@ use Javelin\Exceptions\IllegalConversionException;
 -----------------------------------------------------------------------------
 */
 
-
-abstract class Value implements ValueInterface
+class Value implements ValueInterface
 {
 	// constructor
 
@@ -50,7 +50,7 @@ abstract class Value implements ValueInterface
 
 	public static function encode(ValueInterface $value): string
 	{
-		return "";
+		return self::class() . "{}";
 	}
 
 	/**
@@ -61,7 +61,7 @@ abstract class Value implements ValueInterface
 
 	public static function decode(string $value): ValueInterface
 	{
-		throw new IllegalConversionException(); 
+		throw new IllegalStateChangeException(); 
 	}
 
 
