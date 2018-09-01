@@ -1,6 +1,6 @@
 <?php
 
-namespace Domain; 
+namespace Javelin\Domain; 
 
 use Javelin\Domain\AggregateInterface; 
 use Javelin\Entity\Entity; 
@@ -17,7 +17,7 @@ use Javelin\Entity\Entity;
 */
 
 
-abstract class Aggregate implements AggregateInterface
+class Aggregate implements AggregateInterface
 {
 	
 	/*
@@ -34,10 +34,32 @@ abstract class Aggregate implements AggregateInterface
 		$this->root = $root;
 	}
 
+	/**
+	* equals() determines if two aggregates are equal. 
+	* @param mixed
+	* @return bool
+	*/
+
+	public function equals($target): bool
+	{
+		$status = false;
+
+		if ($target instanceof self)
+		{
+			$status = $target->value() == $this->value;
+		}
+		else
+		{
+			$status = ($this->value == $target);
+		}
+
+		return $status;
+	}
+
 
 	// root function
 
-	public funcion root():EntityInterface
+	public funcion root(): EntityInterface
 	{
 		return $this->root; 
 	}

@@ -1,8 +1,8 @@
 <?php
 
-namespace Utils;
+namespace Javelin\Utils;
 
-use Javelin\Utils\ID\IDInterface;
+use Javelin\Utils\IDInterface;
 use Javelin\Domain\Value;
 use Javelin\Exceptions\IllegalArgumentException;
 
@@ -31,11 +31,6 @@ class ID extends Value implements IDInterface
 
 	public function __construct($value)
 	{
-		if (!$this->isValid($value))
-		{
-			throw new IllegalArgumentException();
-		}
-
 		$this->value = $value;
 	}
 
@@ -43,7 +38,7 @@ class ID extends Value implements IDInterface
 	* equals() determines if the ID is equal to the target
 	*/
 
-	public function equals($target): bbol
+	public function equals($target): bool
 	{
 		$status = false;
 
@@ -59,16 +54,16 @@ class ID extends Value implements IDInterface
 		return $status;
 	}
 
-
 	/**
-	* isValid
+	* value() returns the ID's value
+	* @return mixed
 	*/
 
-	protected function isValid(...$values): bool
+	public function value()
 	{
-		$type = gettype($value[0]);
-		return ($type == "string") || ($type == 'integer');
+		return $this->value;
 	}
+
 
 	// static functions
 

@@ -1,8 +1,8 @@
 <?php
 
-namespace Utils; 
+namespace Javelin\Utils; 
 
-use Utils\CommandInterface;
+use Javelin\Utils\CommandInterface;
 
 /*-----------------------------------
 | Command Intrface

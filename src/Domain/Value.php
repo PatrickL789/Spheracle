@@ -1,9 +1,9 @@
 <?php
-namespace Domain;
+namespace Javelin\Domain;
 
 
 
-use Javeliin\Domain\ValueInterface;
+use Javelin\Domain\ValueInterface;
 use Javelin\Exception\IllegalStateChangeException;
 
 /**--------------------------------------------------------------------------

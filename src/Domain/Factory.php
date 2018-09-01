@@ -1,6 +1,6 @@
 <?php
 
-namespace Domain;
+namespace Javelin\Domain;
 
 use Javelin\Domain\FactoryInterface;
 

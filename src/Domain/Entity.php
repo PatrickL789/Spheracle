@@ -1,6 +1,6 @@
 <?php
 
-namespace Domain;
+namespace Javelini\Domain;
 
 use Javelin\Domain\EntityInterface;
 use Javelin\Exceptions\IllegalStateChangeException; 

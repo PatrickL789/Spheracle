@@ -1,6 +1,6 @@
 <?php
 
-namespace Utils;
+namespace Javelin\Utils;
 
 use Javelin\Domain\ValueInterface;
 

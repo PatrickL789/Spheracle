@@ -1,6 +1,6 @@
 <?php
 
-namespace Domain;
+namespace Javelin\Domain;
 
 use Javelin\Domain\EntityInterface; 
 
@@ -23,6 +23,14 @@ interface AggregateInterface
 	*/
 
 	public function root(): EntityInterface; 
+
+	/**
+	* equals() determines if two aggregates are equal. 
+	* @param mixed
+	* @return bool
+	*/
+
+	public function equals($target): bool;
 }
 
 ?>

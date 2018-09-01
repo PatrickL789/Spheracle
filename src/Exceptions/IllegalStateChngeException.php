@@ -1,8 +1,8 @@
 <?php
 
-namespace Exceptions;
+namespace Javelin\Exceptions;
 
-use Exceptions\BaseException;
+use Javelin\Exceptions\BaseException;
 
 class IllegalStateChangeException extends BaseException
 {

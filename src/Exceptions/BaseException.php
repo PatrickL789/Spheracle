@@ -1,6 +1,6 @@
 <?php
 
-namespace Exceptions;
+namespace Javelin\Exceptions;
 
 class BaseException extends Exception
 {
