@@ -10,8 +10,27 @@ For your Application Service layer, Javelin provides base classes for:
 - Application Services
 - Data Transport Objects (DTOs). 
 
-# Getting Started
-to be updated
+# Installation
+Before using Javlin, you must first install the package.
+
+# Usage
+Once installed, you are free to use the interfaces and classes provided by Javelin to your need. 
+
+## Value Objects
+A Value Object is an object that represents a descriptive aspect of a domain with no conceptual identity. Value Objects are instanciated to implement design elements in which we only care about what they are. 
+
+To define your own Value objects, extend the Javelin\Domain\Value class like so.
+
+<?php
+
+use Javelin\Domain\Value;
+
+class Name extends Value
+{
+  //
+}
+
+?>
 
 # Contribution Guidelines
 To be updated
