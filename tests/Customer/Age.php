@@ -1,10 +1,9 @@
 <?php
 
-namespace Tests\Customer;
-
-use Tests\Customer\AgeSpecification;
 use Javelin\Domain\Value;
 use Javelin\Exceptions\IllegalArgumentException;
+
+require_once(__DIR__ . "/AgeSpecification.php");
 
 class Age extends Value
 {
@@ -26,13 +25,13 @@ class Age extends Value
 
 	public function value()
 	{
-		return $value;
+		return $this->value;
 	}
 
 	public function equals($target): bool
 	{
 		$status = false;
-		if ($target instanceof self::class)
+		if ($target instanceof self)
 		{
 			$status = $this->value == $target->value(); 
 		}

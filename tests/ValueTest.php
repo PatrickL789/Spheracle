@@ -1,7 +1,8 @@
 <?php
 
 use PHPUnit\Framework\TestCase;
-use Tests\Customer\Name;
+require_once(__DIR__ . "/Customer/Name.php");
+
 
 class ValueTest extends TestCase
 {
@@ -11,7 +12,7 @@ class ValueTest extends TestCase
 		$sameName = clone $name1;
 		$diffName = new Name("Joe", "Appleseed"); 
 
-		$this->assertSame(true, $name1->quals($sameName));
+		$this->assertSame(true, $name1->equals($sameName));
 		$this->assertSame(false, $name1->equals($diffName));
 	}
 }

@@ -2,7 +2,7 @@
 
 namespace Javelin\Domain;
 
-use Javelin\Doain\RepositoryInterface; 
+use Javelin\Domain\RepositoryInterface; 
 
 
 /**--------------------------------------------------------------------------

@@ -34,28 +34,6 @@ abstract class Aggregate implements AggregateInterface
 		$this->root = $root;
 	}
 
-	/**
-	* equals() determines if two aggregates are equal. 
-	* @param mixed
-	* @return bool
-	*/
-
-	public function equals($target): bool
-	{
-		$status = false;
-
-		if ($target instanceof self)
-		{
-			$status = $target->value() == $this->value;
-		}
-		else
-		{
-			$status = ($this->value == $target);
-		}
-
-		return $status;
-	}
-
 
 	// root function
 

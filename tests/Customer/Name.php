@@ -1,6 +1,5 @@
 <?php
 
-namespace Tests\Customer;
 
 use Javelin\Domain\Value;
 
@@ -30,7 +29,7 @@ class Name extends Value
 		$this->lastName = $last; 
 	}
 
-	public function fitstName()
+	public function firstName()
 	{
 		return $this->firstName;
 	}
@@ -44,12 +43,12 @@ class Name extends Value
 	{
 		$status = false;
 
-		if ($target instanceof self::class)
+		if ($target instanceof self)
 		{
 			if (($this->firstName == $target->firstName()) && ($this->lastName == $target->lastName()))
-			(
+			{
 				$status = true;
-			)
+			}
 		}
 
 		return $status;

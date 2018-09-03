@@ -1,8 +1,6 @@
 <?php
 
-namespace Javelin\Domain;
-
-use Javelin\Domain\IDInterface; 
+namespace Javelin\Domain; 
 
 
 /**--------------------------------------------------------------------------
@@ -27,11 +25,11 @@ interface EntityInterface
 	* id() returns the entity's unique identifying characteristic. 
 	* This characteristic must be unique to the particular instnce of the entity. 
 	*
-	* @return mixed 
+	* @return mixed
 	*
 	*/
 
-	public abstract function id(): IInterface; 
+	public function id(); 
 
 	/**
 	* equals() determines if the entity is equal to $target

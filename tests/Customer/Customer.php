@@ -1,10 +1,10 @@
 <?php
 
-namespace Tests\Customer;
-
-use Tests\Customer\Age;
-use Tests\Customer\Name;
 use Javelin\Domain\Entity;
+
+require_once(__DIR__ . "/Name.php");
+require_once(__DIR__ . "/Age.php");
+use Javelin\Utils\ID;
 
 class Customer extends Entity
 {
@@ -15,7 +15,7 @@ class Customer extends Entity
 	{
 		$this->name = $name; 
 		$this->age = $age;
-		parent::__construct(new ID($this->name->first() . "-" . $this->name->last() . "-" . $this->age->value()));
+		parent::__construct(new ID($this->name->firstName() . "-" . $this->name->lastName() . "-" . $this->age->value()));
 	}
 
 	public function isLegalAge()
@@ -31,6 +31,18 @@ class Customer extends Entity
 	public function age(): Age
 	{
 		return $this->age; 
+	}
+
+	public function equals($target): bool
+	{
+		$status = false;
+
+		if ($target instanceof self)
+		{
+			$sttatus = (($this->name() === $target->name()) && ($this->age() === $target->age()));
+		}
+
+		return $status;
 	}
 
 

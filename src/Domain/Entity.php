@@ -1,12 +1,10 @@
 <?php
 
-namespace Javelini\Domain;
+namespace Javelin\Domain;
 
 use Javelin\Domain\EntityInterface;
 use Javelin\Exceptions\IllegalStateChangeException; 
 use Javelin\Exceptions\IllegalArgunentException;
-use Javelin\Utils\IDInterface; 
-use Javelin\Utils\ID\ID;
 
 /**--------------------------------------------------------------------------
 |
@@ -27,7 +25,7 @@ abstract class Entity implements EntityInterface
 {
 
 	/**
-	* @var Utils\ID
+	* @var Javelin\Utils\ID
 	*/
 
 	private $id;
@@ -36,7 +34,7 @@ abstract class Entity implements EntityInterface
 	* Constructor
 	*/
 
-	public function __construct(IDInterface $id = null)
+	public function __construct($id = null)
 	{
 		$this->id = $id;
 	}
@@ -47,11 +45,11 @@ abstract class Entity implements EntityInterface
 	* id(() returns the entity's unique identifying characteristic. 
 	* This characteristic must be unique to the particular instnce of the entity. 
 	*
-	* @return mixed 
+	* @return Javelin\Utils\IDInterface
 	*
 	*/
 
-	public function id(): IDInterface
+	public function id()
 	{
 		return $this->id;
 	}
@@ -63,10 +61,7 @@ abstract class Entity implements EntityInterface
 	* @return bool
 	*/
 
-	public abstract function equals($target)
-	{
-		return $this->id()->equals($target);
-	}
+	public abstract function equals($target): bool;
 }
 
 ?>

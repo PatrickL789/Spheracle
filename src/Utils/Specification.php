@@ -1,6 +1,6 @@
 <?php
 
-namespace Javelin\Utilss; 
+namespace Javelin\Utils; 
 
 use Javelin\Utils\SpecificationInterface; 
 use Javelin\Utils\AndSpecification; 
