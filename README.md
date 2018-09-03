@@ -21,18 +21,40 @@ A Value Object is an object that represents a descriptive aspect of a domain wit
 
 To define your own Value objects, extend the Javelin\Domain\Value class like so.
 
-`
+```php
 <?php
 
 use Javelin\Domain\Value;
 
 class Name extends Value
 {
-  //
+  // Code here
 }
 
 ?>
-`
+```
+
+The Value class only requires you to define the `equals()` method. The equals method returns a boolean value indicating whether or not the parameter $target is equal to the value object. You cn define this method in any way that is appropriate for your project. In our example, we'll keep things simple.
+
+```php
+<?php
+
+use Javelin\Domain\Value;
+
+class Name extends Value
+{
+  public function equals($target)
+  {
+    //
+  }
+}
+
+?>
+```
+
+After this, you can customize your value object as much as you'd like.
+
+
 
 # Contribution Guidelines
 To be updated
