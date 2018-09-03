@@ -19,6 +19,10 @@ class ComposerStaticInitd0bda29edf8eb7cd6013d67fab1879ee
         array (
             'Webmozart\\Assert\\' => 17,
         ),
+        'T' => 
+        array (
+            'Tests\\' => 6,
+        ),
         'J' => 
         array (
             'Javelin\\' => 8,
@@ -40,6 +44,10 @@ class ComposerStaticInitd0bda29edf8eb7cd6013d67fab1879ee
         'Webmozart\\Assert\\' => 
         array (
             0 => __DIR__ . '/..' . '/webmozart/assert/src',
+        ),
+        'Tests\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src/tests',
         ),
         'Javelin\\' => 
         array (
@@ -105,6 +113,21 @@ class ComposerStaticInitd0bda29edf8eb7cd6013d67fab1879ee
         'Javelin\\Domain\\ServiceInterface' => __DIR__ . '/../..' . '/src/Domain/ServiceInterface.php',
         'Javelin\\Domain\\Value' => __DIR__ . '/../..' . '/src/Domain/Value.php',
         'Javelin\\Domain\\ValueInterface' => __DIR__ . '/../..' . '/src/Domain/ValueInterface.php',
+        'Javelin\\Exceptions\\BaseException' => __DIR__ . '/../..' . '/src/Exceptions/BaseException.php',
+        'Javelin\\Exceptions\\DivideByZeroException' => __DIR__ . '/../..' . '/src/Exceptions/DivideByZeroException.php',
+        'Javelin\\Exceptions\\IllegalArgumentException' => __DIR__ . '/../..' . '/src/Exceptions/IllegalArgumentException.php',
+        'Javelin\\Exceptions\\IllegalStateChangeException' => __DIR__ . '/../..' . '/src/Exceptions/IllegalStateChngeException.php',
+        'Javelin\\Exceptions\\OutOfBoundsException' => __DIR__ . '/../..' . '/src/Exceptions/OutOfBoundsException.php',
+        'Javelin\\Utils\\AndNotSpecification' => __DIR__ . '/../..' . '/src/Utils/AndNotSpecification.php',
+        'Javelin\\Utils\\AndSpecification' => __DIR__ . '/../..' . '/src/Utils/AndSpecification.php',
+        'Javelin\\Utils\\Command' => __DIR__ . '/../..' . '/src/Utils/Command.php',
+        'Javelin\\Utils\\CommandInterface' => __DIR__ . '/../..' . '/src/Utils/CommandInterface.php',
+        'Javelin\\Utils\\ID' => __DIR__ . '/../..' . '/src/Utils/ID.php',
+        'Javelin\\Utils\\IDInterface' => __DIR__ . '/../..' . '/src/Utils/IDInterface.php',
+        'Javelin\\Utils\\OrNotSpecification' => __DIR__ . '/../..' . '/src/Utils/OrNotSpecification.php',
+        'Javelin\\Utils\\OrSpecification' => __DIR__ . '/../..' . '/src/Utils/OrSpecification.php',
+        'Javelin\\Utils\\SpecificationInterface' => __DIR__ . '/../..' . '/src/Utils/SpecificationInterface.php',
+        'Javelin\\Utilss\\Specification' => __DIR__ . '/../..' . '/src/Utils/Specification.php',
         'PHPUnit\\Exception' => __DIR__ . '/..' . '/phpunit/phpunit/src/Exception.php',
         'PHPUnit\\Framework\\Assert' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/Assert.php',
         'PHPUnit\\Framework\\AssertionFailedError' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/AssertionFailedError.php',

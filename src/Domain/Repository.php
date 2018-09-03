@@ -36,10 +36,7 @@ abstract class Repository implements RepositoryInterface
 	* @return mixed
 	*/
 
-	public functiobn findById($id)
-	{
-		return null; 
-	}
+	public abstract function findById($id);
 
 
 	/*

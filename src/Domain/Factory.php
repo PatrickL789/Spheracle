@@ -20,6 +20,11 @@ use Javelin\Domain\FactoryInterface;
 abstract class Factory implements FactoryInterface
 {
 	//
+
+	public function __construct()
+	{
+		//
+	}
 }
 
 ?>

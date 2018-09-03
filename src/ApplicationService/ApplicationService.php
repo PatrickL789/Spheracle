@@ -23,6 +23,11 @@ abstract class ApplicationService implements ApplicationServiceInterface
 	public function __construct()
 	{
 		//
+
+		public function __construct()
+		{
+			//
+		}
 	}
 }
 

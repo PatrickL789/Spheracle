@@ -4,7 +4,7 @@ namespace Javelin\Domain;
 
 
 use Javelin\Domain\ValueInterface;
-use Javelin\Exception\IllegalStateChangeException;
+use Javelin\Exceptions\IllegalStateChangeException;
 
 /**--------------------------------------------------------------------------
 |

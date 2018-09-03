@@ -40,15 +40,6 @@ interface EntityInterface
 	*/
 
 	public function equals($target): bool; 
-
-
-	/**
-	* setId() sets the entity's id to id. 
-	* @param ID. 
-	* @return void
-	*/
-
-	public function setId(IDInterface $id);
 }
 
 ?>

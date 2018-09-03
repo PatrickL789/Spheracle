@@ -27,7 +27,7 @@ interface RepositoryInterface
 	* @return mixed
 	*/
 
-	public functiobn findById($id);
+	public function findById($id);
 
 
 	/*

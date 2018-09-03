@@ -5,7 +5,7 @@ namespace Javelini\Domain;
 use Javelin\Domain\EntityInterface;
 use Javelin\Exceptions\IllegalStateChangeException; 
 use Javelin\Exceptions\IllegalArgunentException;
-use Javelin\Exceptions\IDInterface; 
+use Javelin\Utils\IDInterface; 
 use Javelin\Utils\ID\ID;
 
 /**--------------------------------------------------------------------------
@@ -23,7 +23,7 @@ use Javelin\Utils\ID\ID;
 -----------------------------------------------------------------------------
 */
 
-class Entity implements EntityInterface
+abstract class Entity implements EntityInterface
 {
 
 	/**
@@ -63,31 +63,10 @@ class Entity implements EntityInterface
 	* @return bool
 	*/
 
-	public function equals($target)
+	public abstract function equals($target)
 	{
 		return $this->id()->equals($target);
 	}
-
-	/**
-	* setId() sets the entity's identifier to $id
-	* @param Util\IDInterface
-	@return void
-	*/
-
-	public function setId(IDInterface $id)
-	(
-		if ($this->id != null)
-		{
-			throw new IllegalStateChangeException("Entity is immutable");
-		}
-
-		if ($id == null)
-		{
-			throw new IllegalArgunentException("Id cannot be NULL"); 
-		}
-
-		$this->id = $id;
-	)
 }
 
 ?>

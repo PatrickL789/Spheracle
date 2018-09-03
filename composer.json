@@ -18,7 +18,8 @@
 
     "autoload": {
         "psr-4": {
-             "Javelin\\": "src"
+             "Javelin\\": "src",
+            "Tests\\": "src/tests"
         }
     },
     "require-dev": {

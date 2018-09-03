@@ -3,7 +3,7 @@
 namespace Javelin\Domain; 
 
 use Javelin\Domain\AggregateInterface; 
-use Javelin\Entity\Entity; 
+use Javelin\Domain\Entity; 
 
 /**--------------------------------------------------------------------------
 |
@@ -17,7 +17,7 @@ use Javelin\Entity\Entity;
 */
 
 
-class Aggregate implements AggregateInterface
+abstract class Aggregate implements AggregateInterface
 {
 	
 	/*
@@ -59,7 +59,7 @@ class Aggregate implements AggregateInterface
 
 	// root function
 
-	public funcion root(): EntityInterface
+	public function root(): EntityInterface
 	{
 		return $this->root; 
 	}
