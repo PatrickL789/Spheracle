@@ -4,17 +4,17 @@ namespace Javelin\ApplicationService;
 
 /**--------------------------------------------------------------------------
 |
-|	ApplicationService
+|	Data Transfer Object (DTO)
 |
 -----------------------------------------------------------------------------
 |
-|	Application Services define how your domain communicates with the outside 
-|	world. Application Services are your system's API. 
+|	A Data Transfer Object, or DTO, is a container object designed to hold
+|   entire number of attributes.
 |
 -----------------------------------------------------------------------------
 */
 
-interface ApplicationServiceInterface
+interface DTOInterface
 {
 	//
 }
