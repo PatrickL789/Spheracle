@@ -21,7 +21,7 @@ A Value Object is an object that represents a descriptive aspect of a domain wit
 
 To define your own Value objects, extend the Javelin\Domain\Value class like so.
 
-<?php
+`<?php
 
 use Javelin\Domain\Value;
 
@@ -30,7 +30,7 @@ class Name extends Value
   //
 }
 
-?>
+?>`
 
 # Contribution Guidelines
 To be updated
