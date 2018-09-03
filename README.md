@@ -28,19 +28,7 @@ use Javelin\Domain\Value;
 
 class Name extends Value
 {
-  private $value;
-  
-  public function __construct(string $v)
-  {
-    $this->value = $v;
-  }
-  
-  // define a getter for the value parameter. Value objects are immutable. so, setters are not needed. 
-  
-  public function value()
-  {
-    return $this->value;
-  }
+  // Code goes here
 }
 
 ?>
@@ -72,6 +60,43 @@ class Name extends Value
 ```
 
 After this, you can customize your value object as much as you'd like.
+
+```php
+<?php
+
+use Javelin\Domain\Value;
+
+class Name extends Value
+{
+  private $value;
+  
+  public function __construct(string $v)
+  {
+    $this->value = $v;
+  }
+  
+  // define a getter for the value parameter. Value objects are immutable. so, setters are not needed. 
+  
+  public function value()
+  {
+    return $this->value;
+  }
+  
+  public function equals($target)
+  {
+    $status = false;
+    
+    if ($target instanceof self)
+    {
+      $status = $this->value === $target->value(); 
+    }
+    
+    return $status;
+  }
+}
+
+?>
+```
 
 
 
