@@ -17,7 +17,7 @@ Before using Javlin, you must first install the package.
 Once installed, you are free to use the interfaces and classes provided by Javelin to your need. 
 
 ## Value Objects
-A Value Object is an object that represents a descriptive aspect of a domain with no conceptual identity. Value Objects are instanciated to implement design elements in which we only care about what they are. 
+A Value Object is an object that represents a descriptive aspect of a domain with no conceptual identity. Value Objects are instanciated to implement design elements in which we only care about what they are.
 
 To define your own Value objects, extend the Javelin\Domain\Value class like so.
 
@@ -59,7 +59,7 @@ class Name extends Value
 ?>
 ```
 
-After this, you can customize your value object as much as you'd like.
+After this, you can customize your value object as much as you'd like. In our example, we will define a simple getter method which will return the value of our name object. It is considered good practice to keep Value Objects immutable, instead opting to simply replace them entirely with new instances when they need to be updated. So, in our example, we will omit setter methods. 
 
 ```php
 <?php
@@ -98,7 +98,7 @@ class Name extends Value
 ?>
 ```
 
-
+Once you are happy with how your value object definitions, you are ready to use them within your Entities and Aggregates.
 
 # Contribution Guidelines
 To be updated
