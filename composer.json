@@ -13,7 +13,7 @@
     ],
 
     "require": {
-        
+        "nesbot/carbon": "^2.4"
     },
 
     "autoload": {
