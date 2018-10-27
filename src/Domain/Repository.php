@@ -3,6 +3,7 @@
 namespace Javelin\Domain;
 
 use Javelin\Domain\RepositoryInterface; 
+use Javelin\Exception\IllegalArgumentException;
 
 
 /**--------------------------------------------------------------------------
@@ -29,14 +30,15 @@ abstract class Repository implements RepositoryInterface
 	}
 
 	/**
-	* findById() returns an object matching the identity $identity. 
+	* save() saves an object to the repository. On success, it returns 
+	* true. Otherwise, it returns false.
 	*
 	* @param $id mixed
 	*
-	* @return mixed
+	* @return bool
 	*/
 
-	public abstract function findById($id);
+	public abstract save($id): bool;
 
 
 	/*

@@ -20,14 +20,14 @@ namespace Javelin\Domain;
 interface RepositoryInterface
 {
 	/**
-	* findById() returns an object matching the identity $identity. 
+	* save() saves the object to the repository. 
 	*
 	* @param $id mixed
 	*
-	* @return mixed
+	* @return bool
 	*/
 
-	public function findById($id);
+	public function save($id): bool;
 
 
 	/*
