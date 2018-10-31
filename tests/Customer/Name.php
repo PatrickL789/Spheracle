@@ -1,7 +1,7 @@
 <?php
 
 
-use Javelin\Domain\Value;
+use Spheracle\Domain\Value;
 
 class Name extends Value
 {

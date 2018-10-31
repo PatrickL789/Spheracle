@@ -1,10 +1,9 @@
 <?php
 
-use Javelin\Domain\Entity;
+use Spheracle\Domain\Entity;
 
 require_once(__DIR__ . "/Name.php");
 require_once(__DIR__ . "/Age.php");
-use Javelin\Utils\ID;
 
 class Customer extends Entity
 {
@@ -15,7 +14,7 @@ class Customer extends Entity
 	{
 		$this->name = $name; 
 		$this->age = $age;
-		parent::__construct(new ID($this->name->firstName() . "-" . $this->name->lastName() . "-" . $this->age->value()));
+		parent::__construct($this->name->firstName() . "-" . $this->name->lastName() . "-" . $this->age->value()));
 	}
 
 	public function isLegalAge()

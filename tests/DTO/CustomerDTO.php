@@ -1,6 +1,6 @@
 <?php
 
-use Javelin\ApplicationService\DTO;
+use Spheracle\ApplicationService\DTO;
 
 require_once(__DIR__ . "/../Customer/Customer.php");
 

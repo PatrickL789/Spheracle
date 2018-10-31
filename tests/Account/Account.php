@@ -1,6 +1,6 @@
 <?php
 
-use Javelin\Domain\Aggregate;
+use Spheracle\Domain\Aggregate;
 
 require_once(__DIR__ . "/../Customer/Customer.php");
 

@@ -1,7 +1,7 @@
 <?php
 
-use Javelin\Domain\Value;
-use Javelin\Exceptions\IllegalArgumentException;
+use Spheracle\Domain\Value;
+use Spheracle\Exceptions\IllegalArgumentException;
 
 require_once(__DIR__ . "/AgeSpecification.php");
 

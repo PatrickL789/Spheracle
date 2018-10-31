@@ -1,6 +1,6 @@
 <?php
 
-use Javelin\Utils\Specification;
+use Spheracle\Utils\Specification;
 
 class AgeSpecification extends Specification
 {
