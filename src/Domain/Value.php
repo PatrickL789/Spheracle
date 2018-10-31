@@ -41,29 +41,6 @@ class Value implements ValueInterface
 
 
 
-	// Static methods
-
-	/**
-	* encode converts the value into a string representation. 
-	*/
-
-	public static function encode(ValueInterface $value): string
-	{
-		return self::class() . "{}";
-	}
-
-	/**
-	* decode() converts the string representation to an object. 
-	* @var string
-	* @return Domain\Value
-	*/
-
-	public static function decode(string $value): ValueInterface
-	{
-		throw new IllegalStateChangeException(); 
-	}
-
-
 	// Magic Methods
 
 	/**
@@ -72,7 +49,7 @@ class Value implements ValueInterface
 
 	public function __toString()
 	{
-		return self::encode($this);
+		//
 	}
 
 
