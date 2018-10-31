@@ -1,9 +1,9 @@
 {
-    "name": "Javelin/Domain",
-    "description": "A library defining interfaces for Domain Driven Design",
-    "version": "1.0.0",
+    "name": "spheracle/spheracle",
+    "description": "A library for creating Framework-independent application logic.",
+    "version": "0.1.0",
     "type": "library",
-    "keywords": ["DDD", "Domain Driven Design"],
+    "keywords": ["DDD", "Domain Driven Design", "Framwork-Independent"],
     "authors": [
     	{
     		"name": "Patrick Luy",
