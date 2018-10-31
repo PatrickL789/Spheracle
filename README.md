@@ -1,5 +1,5 @@
 # Spheracle
-Spheracle is PHP library for writing your application's domain logic in a framework-independent way. Spheracle uses the concepts of [Domain-Driven Design](https://en.wikipedia.org/wiki/Domain-driven_design) to create modular and readable domain logic code. Out of the box, Spheracle provides classes and interfaces for both your application's Domain layer and Application Service layer. For your Domain layer, Spheracle provides classes and interfaces for: 
+Spheracle is PHP library for writing your application's domain logic in a framework-independent way. Spheracle makes use of [Domain-Driven Design](https://en.wikipedia.org/wiki/Domain-driven_design) concepts to help you create modular and readable domain logic code. Out of the box, Spheracle provides classes and interfaces for both your application's Domain layer and Application Service layer. For your Domain layer, Spheracle provides classes and interfaces for: 
 - Entities
 - Value Objects
 - Domain Services
@@ -11,7 +11,11 @@ For your Application Service layer, Spheracle provides base classes for:
 - Data Transport Objects (DTOs). 
 
 # Installation
-Before using Javlin, you must first install the package.
+To install Spheracle, run the following command in your project directory.
+
+```
+composer require spheracle/spheracle
+```
 
 # Usage
 Once installed, you are free to use the interfaces and classes provided by Javelin to your need. 
