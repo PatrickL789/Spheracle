@@ -19,6 +19,3 @@ composer require spheracle/spheracle
 
 # Usage
 See the [Wiki](https://github.com/PatrickL789/Spheracle/wiki) for the documentation.
-
-# Contribution Guidelines
-To be updated
