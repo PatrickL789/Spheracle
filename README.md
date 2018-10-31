@@ -18,7 +18,7 @@ composer require spheracle/spheracle
 ```
 
 # Usage
-Once installed, you are free to use the interfaces and classes provided by Javelin to your need. 
+See the [Wiki](https://github.com/PatrickL789/Spheracle/wiki) for the documentation.
 
 # Contribution Guidelines
 To be updated
