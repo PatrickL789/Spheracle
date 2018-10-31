@@ -1,6 +1,6 @@
 <?php
 
-namespace Javelin\Domain;
+namespace Spheracle\Domain;
 
 
 /**--------------------------------------------------------------------------

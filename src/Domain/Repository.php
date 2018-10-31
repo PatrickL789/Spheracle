@@ -1,9 +1,9 @@
 <?php
 
-namespace Javelin\Domain;
+namespace Spheracle\Domain;
 
-use Javelin\Domain\RepositoryInterface; 
-use Javelin\Exception\IllegalArgumentException;
+use Spheracle\Domain\RepositoryInterface; 
+use Spheracle\Exception\IllegalArgumentException;
 
 
 /**--------------------------------------------------------------------------

@@ -1,9 +1,9 @@
 <?php
 
-namespace Javelin\Utils;
+namespace Spheracle\Utils;
 
-use Javelin\Domain\Service;
-use Javelin\Utils\LogServiceInterface;
+use Spheracle\Domain\Service;
+use Spheracle\Utils\LogServiceInterface;
 use Carbon\Carbon;
 
 abstract class LogService extends Service implements LogServiceInterface

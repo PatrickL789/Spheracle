@@ -1,10 +1,10 @@
 <?php
 
-namespace Javelin\Domain;
+namespace Spheracle\Domain;
 
-use Javelin\Domain\EntityInterface;
-use Javelin\Exceptions\IllegalStateChangeException; 
-use Javelin\Exceptions\IllegalArgunentException;
+use Spheracle\Domain\EntityInterface;
+use Spheracle\Exceptions\IllegalStateChangeException; 
+use Spheracle\Exceptions\IllegalArgunentException;
 
 /**--------------------------------------------------------------------------
 |

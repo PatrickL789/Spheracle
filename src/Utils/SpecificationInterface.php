@@ -1,6 +1,6 @@
 <?php
 
-namespace Javelin\Utils; 
+namespace Spheracle\Utils; 
 
 /*-----------------------------------
 | SpecificationInterface

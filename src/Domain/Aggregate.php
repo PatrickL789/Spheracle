@@ -1,9 +1,9 @@
 <?php
 
-namespace Javelin\Domain; 
+namespace Spheracle\Domain; 
 
-use Javelin\Domain\AggregateInterface; 
-use Javelin\Domain\Entity; 
+use Spheracle\Domain\AggregateInterface; 
+use Spheracle\Domain\Entity; 
 
 /**--------------------------------------------------------------------------
 |

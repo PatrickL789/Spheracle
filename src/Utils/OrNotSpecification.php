@@ -1,8 +1,8 @@
 <?php
 	
-namespace Javelin\Utils;
+namespace Spheracle\Utils;
 
-use Javelin\Utils\Specification; 
+use Spheracle\Utils\Specification; 
 
 /**--------------------------------------------------------------------------
 |

@@ -1,10 +1,9 @@
 <?php
-namespace Javelin\Domain;
+namespace Spheracle\Domain;
 
 
-
-use Javelin\Domain\ValueInterface;
-use Javelin\Exceptions\IllegalStateChangeException;
+use Spheracle\Domain\ValueInterface;
+use Spheracle\Exceptions\IllegalStateChangeException;
 
 /**--------------------------------------------------------------------------
 |

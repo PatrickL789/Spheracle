@@ -1,8 +1,8 @@
 <?php
 
-namespace Javelin\Domain;
+namespace Spheracle\Domain;
 
-use Javelin\Domain\FactoryInterface;
+use Spheracle\Domain\FactoryInterface;
 
 
 /**--------------------------------------------------------------------------

@@ -18,7 +18,7 @@
 
     "autoload": {
         "psr-4": {
-             "Javelin\\": "src",
+             "Spheracle\\": "src",
             "Tests\\": "src/tests"
         }
     },

@@ -1,12 +1,12 @@
 <?php
 
-namespace Javelin\Utils; 
+namespace Spheracle\Utils; 
 
-use Javelin\Utils\SpecificationInterface; 
-use Javelin\Utils\AndSpecification; 
-use Javelin\Utils\AndNotSpecification; 
-use Javelin\Javelin\Utils\OrSpecification; 
-use Javelin\Utils\OrNotSpecification; 
+use Spheracle\Utils\SpecificationInterface; 
+use Spheracle\Utils\AndSpecification; 
+use Spheracle\Utils\AndNotSpecification; 
+use Spheracle\Javelin\Utils\OrSpecification; 
+use Spheracle\Utils\OrNotSpecification; 
 
 
 

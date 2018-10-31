@@ -1,8 +1,8 @@
 <?php
 
-namespace Javelin\Exceptions;
+namespace Spheracle\Exceptions;
 
-use Javelin\Exceptions\BaseException;
+use Spheracle\Exceptions\BaseException;
 
 class OutOfBoundsException extends BaseException
 {

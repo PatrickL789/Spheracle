@@ -1,8 +1,8 @@
 <?php
 
-namespace Javelin\ApplicationService;
+namespace Spheracle\ApplicationService;
 
-use Javelin\ApplicationService\ApplicationServiceInterface; 
+use Spheracle\ApplicationService\ApplicationServiceInterface; 
 
 /**--------------------------------------------------------------------------
 |
