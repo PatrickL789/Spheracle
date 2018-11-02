@@ -4,6 +4,12 @@
     "version": "0.1.0",
     "type": "library",
     "keywords": ["DDD", "Domain Driven Design", "Framwork-Independent"],
+    "license": "MIT",
+    "support": {
+        "email": "spheracle@venturesphereapp.com",
+        "wiki": "https://github.com/Spheracle/Spheracle/wiki"
+    },
+
     "authors": [
     	{
     		"name": "Patrick Luy",
