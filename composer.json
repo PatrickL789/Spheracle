@@ -20,7 +20,7 @@
     "minimum-stability": "stable",
 
     "require": {
-        "nesbot/carbon": "^2.5"
+        "nesbot/carbon": "^2.1"
     },
 
     "autoload": {
