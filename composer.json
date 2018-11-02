@@ -11,6 +11,7 @@
     		"role": "developer"
     	}
     ],
+    "minimum-stability": "stable",
 
     "require": {
         "nesbot/carbon": "^1.34"
