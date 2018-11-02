@@ -1,7 +1,7 @@
 {
     "name": "spheracle/spheracle",
     "description": "A library for creating Framework-independent application logic.",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "type": "library",
     "keywords": ["DDD", "Domain Driven Design", "Framwork-Independent"],
     "license": "MIT",
