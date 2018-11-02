@@ -35,6 +35,10 @@ class ComposerStaticInitd0bda29edf8eb7cd6013d67fab1879ee
             'Doctrine\\Instantiator\\' => 22,
             'DeepCopy\\' => 9,
         ),
+        'C' => 
+        array (
+            'Carbon\\' => 7,
+        ),
     );
 
     public static $prefixDirsPsr4 = array (
@@ -72,10 +76,10 @@ class ComposerStaticInitd0bda29edf8eb7cd6013d67fab1879ee
         array (
             0 => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy',
         ),
-    );
-
-    public static $fallbackDirsPsr4 = array (
-        0 => __DIR__ . '/..' . '/nesbot/carbon/src',
+        'Carbon\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon',
+        ),
     );
 
     public static $prefixesPsr0 = array (
@@ -638,7 +642,6 @@ class ComposerStaticInitd0bda29edf8eb7cd6013d67fab1879ee
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInitd0bda29edf8eb7cd6013d67fab1879ee::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInitd0bda29edf8eb7cd6013d67fab1879ee::$prefixDirsPsr4;
-            $loader->fallbackDirsPsr4 = ComposerStaticInitd0bda29edf8eb7cd6013d67fab1879ee::$fallbackDirsPsr4;
             $loader->prefixesPsr0 = ComposerStaticInitd0bda29edf8eb7cd6013d67fab1879ee::$prefixesPsr0;
             $loader->classMap = ComposerStaticInitd0bda29edf8eb7cd6013d67fab1879ee::$classMap;
 
